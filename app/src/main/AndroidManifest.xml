@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobedu">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MemberMenu.detailArticle"></activity>
+        <activity android:name=".MemberMenu.articleList" />
+        <activity android:name=".Login.konfirmasi" />
+        <activity android:name=".Login.register" />
+        <activity android:name=".MemberMenu.SEARCHJOB" />
+        <activity android:name=".MemberMenu.DESIGNJOB" />
+        <activity android:name=".EmployerMenu.updatePostJob" />
+        <activity android:name=".EmployerMenu.processingMember" />
+        <activity android:name=".EmployerMenu.detailmanageJob" />
+        <activity android:name=".EmployerMenu.manageJob" />
+        <activity android:name=".EmployerMenu.EmployerHomeMenu" />
+        <activity android:name=".MemberMenu.appliedList" />
+        <activity android:name=".MemberMenu.JOBTYPE" />
+        <activity android:name=".MemberMenu.ITJOB" />
+        <activity android:name=".EmployerMenu.postJob" />
+        <activity android:name=".Login.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

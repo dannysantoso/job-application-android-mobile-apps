@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployerMenu.detailmanageJob"
+    android:background="@color/backgroundColor"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobid"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobdesk"
+        android:text="Job Desk"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/company"
+        android:textSize="18sp"
+        android:text="Company"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textSize="18sp"
+        android:text="Address"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/salary"
+        android:textSize="18sp"
+        android:text="Salary"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:textSize="18sp"
+        android:text="Type"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="APPLIED MEMBER :"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="20dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appliedmember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>
